@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 10;
+    align-content: center;
+}
+:root {
+    --main-color: rgb(180, 176, 176);
+}
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-content: center;
+}
+
+h1 {
+    padding-bottom: 60px;
+}
+h3 {
+    border: 2px solid black; 
+    text-align: center; 
+    width: 100px;
+    margin-top: 0;    
+    float: inline-end;
+}
+
+p {
+    padding: 5px;
+}
+
+.row {
+    width: 100%;    
+}
+
+.col1, .col2, .col3 {
+    border: 2px solid black;
+    width: auto;
+    margin: 2px;
+    float: left;
+    background-color: rgb(202, 198, 198);
+}
+
+@media screen and (min-width: 992px) {
+    .col1, .col2, .col3 {
+        width: 30%;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .col1, .col2 {
+        width: 49%
+    }
+    .col3 {
+        width: 98.5%;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 767px) {
+    .col1, .col2, .col3 {
+        width: 100%
+    }
+}
+#navbar-brand {
+    background-color: var(--main-color);
+}
